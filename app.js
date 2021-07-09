@@ -1,6 +1,6 @@
 var bellybuttonData;
 // Fetch the JSON data and console log it
-d3.json("../data/samples.json").then(function(data) {
+d3.json("/data/samples.json").then(function(data) {
   bellybuttonData = data;
   var select = document.getElementById('selDataset');
   var firstValue = 0;
