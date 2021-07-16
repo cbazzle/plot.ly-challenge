@@ -15,6 +15,7 @@ d3.json("data/samples.json").then(function(data) {
     }
     select.appendChild(opt);
   }
+  
   // Have the first sample name auto-populate the dropdown
   optionChanged(firstValue);
 });
@@ -70,6 +71,7 @@ optionChanged = function(name) {
     }
   }
   
+  // Loop through data and assign variables
   for (var i in bellybuttonData.samples){
     if (bellybuttonData.samples[i].id == name){
       var ids = bellybuttonData.samples[i].otu_ids;
@@ -85,11 +87,12 @@ optionChanged = function(name) {
           color: ids,
           opacity: [1, 0.8, 0.6, 0.4],
           size: values
-      }
-    };
-    
+        }
+      };
+      // Assign trace1 to variable
       var data = [trace1];
     
+      // Format graph
       var layout = {
         title: "Bacteria Cultures Per Sample",
         showlegend: false,
@@ -97,7 +100,7 @@ optionChanged = function(name) {
         width: 1200
       };
     
-      // Render the plot to the div tag with id "bubble"
+    // Render the plot to the div tag with id "bubble"
     Plotly.newPlot("bubble", data, layout);
     }
   }
