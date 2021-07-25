@@ -20,7 +20,7 @@ d3.json("data/samples.json").then(function(data) {
   optionChanged(firstValue);
 });
 
-// Demographic information
+// Add demographic information
 optionChanged = function(name) {
   var div = document.getElementById('sample-metadata');
   for (var i in bellybuttonData.metadata){
