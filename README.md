@@ -9,11 +9,11 @@ I used the D3 library to read in 'samples.json.' Each sampled selected populated
  
  - A horizontal bar chart displaying the top 10 OTUs found in that individual.
  
- ![bar Chart](Images/dropdown)
+ ![bar Chart](Images/dropdown.png)
  
  - A bubble chart displaying each sample
  
- ![bubble Chart](Images/bubble_chart)
+ ![bubble Chart](Images/bubble_chart.png)
  
 Any time a new sample is selected the information in each section changes to reflect that sample.
 
